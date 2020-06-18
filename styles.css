@@ -1,0 +1,56 @@
+h1 {
+	color: darkblue;
+	text-align: center; 
+	font-family: Garamond, Arial Black, Lato, sans-serif;
+}
+
+#photo {
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+
+#contact {
+	float: right;
+	background: lightblue;
+	width: calc(100% - 400px);
+	height: 200px;
+	padding: 20px;
+	font-size: 17px;
+	margin-right: 20px;
+}
+
+#resumeinfo{
+	margin-top: 450px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:10px;
+	background-color: #ebecf0;
+	align-content: center;
+}
+
+.name{
+	color: #3955d4;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.subname{
+	font-style: italic;
+	font-weight: bold;
+}
+
+.columns{
+	columns="2"
+}
+
+.title{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#form{
+	margin-left: 20px;
+}
+
