@@ -28,8 +28,17 @@ h2 {
 	font-family: Garamond, Arial Black, Lato, sans-serif;
 }
 
-#photo {
-	width: 250px;
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container > div {
+	width: 100%-110px;
+}
+
+#photo { 
+	width: 250px; 
 }
 
 #contact {
