@@ -44,7 +44,7 @@ h2 {
 #contact {
 	float: right;
 	background: lightblue;
-	width: calc(100% - 300px);
+	width: calc(100% - 290px);
 	height: 313px;
 	font-size: 17px;
 	margin-top: 0px;
@@ -55,8 +55,8 @@ h2 {
 #navigationbar{
 	background-color: #ebecf0;
 	padding: 2px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 50px;
+	padding-bottom: 50px;
     text-align: center;
 }
 
