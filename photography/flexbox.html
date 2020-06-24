@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Hobbies</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style>
+			body {
+				margin: 5%;
+				padding: 20px;
+			}
+			
+			.container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.container > div {
+				background-color: #ebe9e8;
+				font-size: 20px;
+				margin: 10px;
+				padding: 10px;
+				width: 380px;
+			}
+
+			.slides1, .slides2, .slides3, .slides4, .slides5, .slides6 {
+				width: 380px;
+				display:none;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<h1>These are some things that I like to do in my free time :)</h1>
+
+		<ul>
+			<li><a href="#photo" class="index">Landscape Photography</a></li>
+			<li><a href="#bake" class="index">Baking</a></li>
+		</ul>
+
+		<br><h2 id="photo">Landscape Photography</h2>
+
+		<div class="container">
+			<div class="w3-content w3-display-container"> 
+				<img class="slides1" src="amble1.jpg">
+				<img class="slides1" src="amble12.jpg">
+				<img class="slides1" src="amble10.jpg">
+				<img class="slides1" src="amble14.jpg">
+				<img class="slides1" src="amble6.jpg">
+				<img class="slides1" src="amble15.jpg">
+				<img class="slides1" src="amble16.jpg">
+				<img class="slides1" src="amble2.jpg">
+				<img class="slides1" src="rock.jpeg">
+				<img class="slides1" src="lhp1.jpg">
+				<img class="slides1" src="amble3.jpg">
+				<img class="slides1" src="amble4.jpg">
+				<img class="slides1" src="amble5.jpg">
+				<img class="slides1" src="amble7.jpg">
+				<img class="slides1" src="amble8.jpg">
+				<img class="slides1" src="amble9.jpg">
+				<img class="slides1" src="amble11.jpg">
+				<img class="slides1" src="amble13.jpg">
+				<img class="slides1" src="amble17.jpg">
+				<img class="slides1" src="amble18.jpg">
+				<img class="slides1" src="amble19.jpg">
+				<img class="slides1" src="amble20.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,0)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,0)">&#10095;</button>
+				
+				West Vancouver: Ambleside, Dundarave, Light House Park
+			</div>
+
+			<div>
+				<img class="slides2" src="ubc5.jpg">
+				<img class="slides2" src="ubc1.jpg">
+				<img class="slides2" src="ubc2.jpg">
+				<img class="slides2" src="ubc3.jpg">
+				<img class="slides2" src="ubc4.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,1)">&#10095;</button>
+
+				UBC Vancouver: Point Grey, Wreck Beach, Student Nest
+			</div>
+
+			<div>
+				<img class="slides3" src="dt3.jpg">
+				<img class="slides3" src="dt1.jpg">
+				<img class="slides3" src="dt2.jpg">
+				<img class="slides3" src="dt4.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,2)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,2)">&#10095;</button>
+
+				Vancouver Downtown
+			</div>
+
+			<div>
+				<img class="slides4" src="ferry1.jpg">
+				<img class="slides4" src="ferry4.jpg">
+				<img class="slides4" src="ferry2.jpg">
+				<img class="slides4" src="ferry3.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,3)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,3)">&#10095;</button>
+
+				Scenery on BC Ferries: Tswassen-Swartz
+			</div>
+
+			<div>
+				<img class="slides5" src="al2.jpg">
+				<img class="slides5" src="al3.jpg">
+				<img class="slides5" src="al4.jpg">
+				<img class="slides5" src="al5.jpg">
+				<img class="slides5" src="al1.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,4)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,4)">&#10095;</button>
+
+				Alberta: Banff National Park, Athabasca Glacier, Yoho National Park
+			</div>
+
+			<div>
+				<img class="slides6" src="stl1.jpg">
+				<img class="slides6" src="stl2.jpg">
+				<img class="slides6" src="stl3.jpg">
+				<img class="slides6" src="stl4.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,5)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,5)">&#10095;</button>
+
+				Seattle, WA
+			</div>
+		</div>
+
+		<br><h2 id="bake">Baking</h2>
+			<div>
+
+			</div>
+
+		<script>
+			var slideIndex = [1,1,1,1,1,1];
+			var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6"]
+			showDivs(1,0);
+			showDivs(1,1);
+			showDivs(1,2);
+			showDivs(1,3);
+			showDivs(1,4);
+			showDivs(1,5);
+
+			function plusDivs(n, no) {
+  				showDivs(slideIndex[no] += n, no);
+			}
+
+			function showDivs(n, no) {
+  				var i;
+  				var x = document.getElementsByClassName(slideId[no]);
+  				if (n > x.length) {slideIndex[no] = 1}
+  				if (n < 1) {slideIndex[no] = x.length} ;
+  				for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+  				}
+  				x[slideIndex[no]-1].style.display = "block";
+			}
+		</script>
+
+	</body>
+
+</html>
