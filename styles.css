@@ -24,22 +24,6 @@ body {
 	height: auto;
 }
 
-/* h1 {
-	color: ;
-	text-align: center;
-	padding-top: 120px;
-	padding-left: 30px;
-	padding-right: 30px;
-	background-image: url("sky.jpg");
-	height: 300px;
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	color: beige;
-  	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} */
-
 h2 {
 	color: darkblue;
 	text-align: center; 
@@ -70,18 +54,34 @@ h2 {
 	padding-top: 0px;
 }
 
-#navigationbar{
-	background-color: #ebecf0;
-	padding: 2px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-    text-align: center;
+#navigationbar ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	border: 1px solid #e7e7e7;
+  	background-color: #f3f3f3;
 }
 
-.navtool{
-	padding-left: 30px;
-	padding-right: 30px;
-	background-color: lightgrey;
+#navigationbar li {
+  float: left;
+}
+
+#navigationbar li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigationbar li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+#navigationbar li a.active {
+  color: white;
+  background-color: #4CAF50;
 }
 
 #resumeinfo{
@@ -128,3 +128,12 @@ h2 {
 	margin-bottom: 20px;
 }
 
+button {
+  	background-color: lightgrey;
+  	border: none;
+  	color: white;
+  	padding: 16px 32px;
+  	text-decoration: none;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
