@@ -1,9 +1,21 @@
-body {
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 12%;
-	margin-right: 12%;
-	background-color: #dae4f5; //#cad3e3;
+@media (min-width: 850px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 12%;
+		margin-right: 12%;
+		background-color: #dae4f5; //#cad3e3;
+	}
+}
+
+@media (max-width: 849px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: #dae4f5; //#cad3e3;
+	}
 }
 
 #header {
@@ -45,7 +57,7 @@ h2 {
 
 #contact {
 	float: right;
-	background: lightblue;
+	background: #bbe3f0; //#acd8e6;
 	width: calc(100% - 300px);
 	height: 313px;
 	font-size: 17px;
@@ -122,17 +134,23 @@ h2 {
   	background-size: cover;
 }
 
+input[type=text] {
+	border: none;
+	border-radius: 3px;
+}
+
 .message{
 	width: 400px;
 	height: 100px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+
 }
 
 button {
-  	background-color: lightgrey;
+  	background-color: #f3f3f3;
   	border: none;
-  	color: white;
-  	padding: 16px 32px;
+  	border-radius: 7px;
+  	padding: 16px 28px;
   	text-decoration: none;
   	margin: 4px 2px;
   	cursor: pointer;
