@@ -44,16 +44,15 @@
 
 	#photo { 
 		display: block;
-		width: 50%;
+		width: 100%;
 		border-radius: 50%;
 		height: auto;
 	}
 
 	#contact {
-		float: right;
-		width: calc(100% - 550px);
+		position: center;
 		font-size: 17px;
-		padding-left: 30px;
+		padding: 30px;
 	}
 }
 
