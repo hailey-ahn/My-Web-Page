@@ -8,31 +8,30 @@
 	</head>
 	
 	<body>
-		<div id="navigationbar">
-			<ul>
-				<li><a href="#resumeinfo" class="navtool">About</a></li>
-				<li><a href="projects.html" class="navtool">Projects</a></li>
-				<li><a class="navtool">Research</a></li>
-				<li><a href="photography/flexbox.html" class="navtool">Hobbies</a></li>
-				<li><a href="#form" class="navtool">Message</a></li>
-			</ul>
-		</div>
+
+		<nav id="navbar" class="navbar-fixed-top">
+			<a href="#resumeinfo" class="navtool">About</a>
+			<a href="projects.html" class="navtool">Projects</a>
+			<a class="navtool">Research</a>
+			<a href="photography/hobbies.html" class="navtool">Hobbies</a>
+			<a href="#form" class="navtool">Message</a>
+		</nav>
 		
 		<div id="header">
 			<img src="header2.png" class="responsive">
 		</div>
 		
-		<div class="container">
+		<div class="container1">
 			<div>
 				<img id="photo" src="IMG_6466-1.jpg">
 			</div>
 		
 			<div id="contact"> 
 				<h2>Hailey Ahn</h2>
-				<p style="font-size: 18px; color: darkblue"><u> Contact Information: </u></p>
-				<p>Email: ahn5737@gmail.com</p>
-				<p> Tel: 778-889-0913</p>
-				<p> Location: Vancouver, BC</p>
+				<br><h6>ahn5737@gmail.com
+				<span>&#8226;</span> 778-889-0913
+				<span>&#8226;</span> Vancouver, BC
+				</h6>
 			</div>
 		</div>
 
@@ -48,33 +47,38 @@
 			<ul class="columns">
 				<li>Programming languages: Python, MATLAB, C, Assembly, HTML*, CSS*</li>
 				<li>Proficient in MS Office</li>
-				<li>3D print modelling: Fusion 360</li>
 			</ul>
 			<span class="subname">Laboratory Skills</span>
-			<br><br>Biochemistry/Chemistry/Molecular Biology
-			<ul class="columns">
-				<li>PCR</li>
-				<li>SDS PAGE</li>
-				<li>Agarose gel electrophoresis</li>
-				<li>Sonication cell lysis</li>
-				<li>Transformation</li>
-				<li>Protein crystallization</li>
-				<li>Column chromatography</li>
-				<li>Fast protein liquid chromatography</li>
-				<li>Bradford assay</li>
-				<li>Melting point apparatus</li>
-				<li>Rotary evaporator</li>
-				<li>Distillation apparatus</li>
-				<li>PyMOL visualization</li>
-			</ul>
-			Physics / Electronics
-			<ul class="columns">
-				<li>AC/DC circuitry</li>
-				<li>Oscilloscope</li>
-				<li>Microcontroller</li>
-				<li>Digital multimeters</li>
-				<li>Chi-squared testing and standard deviation</li>
-			</ul>
+			<div class="container2">
+			<div>
+			<br><i>Biochemistry/Chemistry/Molecular Biology</i>
+				<ul class="columns">
+					<li>PCR</li>
+					<li>SDS PAGE</li>
+					<li>Agarose gel electrophoresis</li>
+					<li>Sonication cell lysis</li>
+					<li>Transformation</li>
+					<li>Protein crystallization</li>
+					<li>Column chromatography</li>
+					<li>Fast protein liquid chromatography</li>
+					<li>Bradford assay</li>
+					<li>Melting point apparatus</li>
+					<li>Rotary evaporator</li>
+					<li>Distillation apparatus</li>
+					<li>PyMOL visualization</li>
+				</ul>
+			</div>
+			<div>
+			<br><i>Physics / Electronics</i>
+				<ul class="columns">
+					<li>AC/DC circuitry</li>
+					<li>Oscilloscope</li>
+					<li>Microcontroller</li>
+					<li>Digital multimeters</li>
+					<li>Statistical analysis </li>
+				</ul>
+			</div>
+			</div>
 
 			<div class="name">Work Experience</div>
 			<br><span class="title">UBC Department of Biochemistry and Molecular Biology - Van Petegem Lab </span>
@@ -85,9 +89,12 @@
 				<li>Studied recent journals on Calcium Dependent Activation/Inhibition of ion channels and participated in the lab journal club.</li>
 			</ul>
 
-			<span class="title">UBC Department of Mathematics
+			<span class="title">UBC Department of Mathematics</span>
 			<div class="subname">MATH100/180 Teaching Assistant	(Sept 2019-Dec 2019)</div>
-
+			<ul>
+				<li>Guided students during their workshop to come up with different ways of approaching a problem</li>
+				<li>Recognized what each student was struggling with and corrected any misconceptions so that the students were prepared for their examinations</li>
+			</ul>
 
 			<div class="name">Volunteer Experience</div>
 			
@@ -107,11 +114,17 @@
 		<div id="form">
 		<form>
 			<p> If you have any questions about me, feel free to shoot me an email!</p>
-			<input type="text" placeholder="Name" name="name">
+			<input type="text" placeholder="Name" name="Name">
 			<input type="text" placeholder="Your Email" name="name">
 			<br><input class="message" type="text" placeholder="Message" name="name">
 			<button>Submit</button>
 		</form>
 		</div>
+
+		<button onclick="topFunction()" id="topbtn" title="Go to top"><i class="arrow"></i></button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="backtotop.js"></script>
+
 	</body>
 </html>
