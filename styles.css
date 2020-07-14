@@ -32,7 +32,9 @@
 		padding-right: 20px;
 		margin-left: 5%;
 		margin-right: 5%;
-		background-color: #dae4f5; 
+		background-image: url("sky.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	#photo { 
@@ -40,7 +42,6 @@
 		width: 100%;
 		border-radius: 50%;
 		height: auto;
-		margin:20px;
 	}
 
 	#contact {
@@ -79,11 +80,6 @@
 	margin: 40px;
 	padding-top: 40px;
 	height: 300px;
-	/*background-image: url("sky2.jpg");
-	background-attachment: fixed;
-  	background-position: 50% 70%;
-  	background-repeat: no-repeat;
-  	background-size: cover;*/
 }
 
 .responsive {
@@ -103,7 +99,6 @@ h2 {
 nav {
 	list-style-type: none;
   	overflow: hidden;
-  	border: 1px solid #f3f3f3;
 }
 
 .navbar-fixed-top.scrolled {
@@ -147,53 +142,15 @@ nav a.active {
 	font-weight: bold;
 }
 
-.columns{
-	columns="2"
-}
-
 .title{
 	font-weight: bold;
 	font-size: 15px;
-}
-
-#topbtn {
-  	display: none; /* Hidden by default */
-  	position: fixed; /* Fixed/sticky position */
-  	bottom: 50px; /* Place the button at the bottom of the page */
-  	right: 30px; /* Place the button 30px from the right */
-  	z-index: 99; /* Make sure it does not overlap */
-  	border: none; /* Remove borders */
-  	outline: none; /* Remove outline */
-  	background-color: #f3f3f3; /* Set a background color */
-  	color: blue; /* Text color */
-  	cursor: pointer; /* Add a mouse pointer on hover */
-  	padding: 15px; /* Some padding */
-  	border-radius: 50%; /* Rounded corners */
-  	font-size: 18px; /* Increase font size */
-}
-
-#topbtn:hover {
-  	background-color: #555; /* Add a dark-grey background on hover */
-}
-
-.arrow {
-  	border: solid black;
-  	border-width: 0 3px 3px 0;
-  	display: inline-block;
-  	padding: 3px;
-  	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
 }
 
 #form{
 	padding-top: 10px;
 	padding: 20px;
 	height: 300px;
-	/*background-image: url("sky2.jpg");
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;*/
 }
 
 input[type=text] {
