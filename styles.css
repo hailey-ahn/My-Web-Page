@@ -124,8 +124,9 @@ nav a.active {
   background-color: #4CAF50;
 }
 
-#resumeinfo{
-	background-color: #f3f3f3;
+#resumeinfo {
+	background: rgba(243, 243, 243, 1);
+	border: 2px solid #f3f3f3;
 	align-content: center;
 	padding: 30px;
 	font-family: sans-serif;
