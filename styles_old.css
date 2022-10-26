@@ -5,15 +5,16 @@
 		margin-top: 70px;
 		padding-left: 12%;
 		padding-right: 12%;
-		/*background-image: url("sky.jpg");*/
-		background-color: white;
+		background-image: url("sky.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		/*align-items: center;
-		align-content: center;
-		text-align: center;*/
 	}
 
+	#welcome_message {
+	margin: 40px;
+	padding-top: 40px;
+	width: 60%;
+	}
 
 	nav {
 		margin-left: 12%;
@@ -29,11 +30,6 @@
 		font-size: 17px;
 		padding-left: 30px;
 	}
-
-	#welcome_message {
-	margin: 40px;
-	width: 60%;
-	}
 }
 
 @media (max-width: 999px) {
@@ -47,39 +43,12 @@
 		background-size: cover;
 	}
 
-	#photo { 
-		display: block;
-		width: 100%;
-		border-radius: 50%;
-		height: auto;
-	}
 
-	#contact {
-		text-align:  center;
-		font-size: 17px;
-		padding: 30px;
-	}
-
-	.message {
-		max-width: 100%;
-	}
+#welcome_message {
+	margin: 40px;
+	padding-top: 40px;
+	width: 60%;
 }
-
-.container1 {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 20px;
-	justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.container1 > div {
-	margin: 30px;
-}
-
-
-
 
 .responsive {
 	display: block;
@@ -123,10 +92,28 @@ nav a.active {
   background-color: #4CAF50;
 }
 
-#welcome_message {
-	margin: 40px;
-	padding-top: 40px;
-	width: 60%;
+#resumeinfo {
+	background: rgba(243, 243, 243, 1);
+	border: 2px solid #f3f3f3;
+	align-content: center;
+	padding: 30px;
+	font-family: sans-serif;
+}
+
+.name{
+	color: #3955d4;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.subname{
+	font-weight: bold;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 15px;
 }
 
 #form{
@@ -138,7 +125,6 @@ nav a.active {
 input[type=text] {
 	border: none;
 	border-radius: 3px;
-	background-color: whitesmoke;
 }
 
 .message{
