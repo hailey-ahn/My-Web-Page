@@ -50,23 +50,23 @@ nav a.active {
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
 	.container > div {
 		/*background-color: #ebe9e8;*/
 		background: #f3f3f3;
 		font-size: 20px;
 		margin: 20px;
 		padding: 10px;
-		width: 380px;
+		width: 480px;
 	}
 
 	.slides1, .slides2, .slides3, .slides4, .slides5, .slides6 {
-		width: 380px;
+		width: 480px;
 		display:none;
 	}
 }
 
-@media (max-width: 399px) {
+@media (max-width: 499px) {
 	.container > div {
 		background-color: #ebe9e8;
 		font-size: 20px;
