@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Hobbies</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<link rel="stylesheet" href="hobbystyles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	</head>
+	
+	<body>
+		<a href="../home.html" id="homebutton">Home</a>
+		<h1>These are some things that I like to do for fun :)</h1>
+
+		<nav id="navbar" class="navbar-fixed-top">
+		<a href="#photo" class="navtool">Photography</a>
+		<a href="#paint" class="navtool">Painting</a>
+		<a href="#piano" class="navtool">Piano</a>
+		</nav>
+
+
+		<br><h2 id="photo">Photography</h2>
+		<a href="https://www.instagram.com/ahnsaehyun/" class="fa fa-instagram"></a>
+		<h4>Feel free to check out my photos on instagram!</h4>
+
+
+		<div class="container">
+			<div class="w3-content w3-display-container"> 
+				<img class="slides1" src="DSC_2542.jpg">
+				<img class="slides1" src="DSC_2600.jpg">
+				<img class="slides1" src="DSC_2597.jpg">
+				<img class="slides1" src="DSC_2616.jpg">
+				<img class="slides1" src="DSC_2818.jpg">
+				
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,0)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,0)">&#10095;</button>
+				
+				Quebec City, Quebec, Canada
+			</div>
+
+
+			<div class="w3-content w3-display-container"> 
+				<img class="slides2" src="starhouse.JPG">
+				<img class="slides2" src="DSC_1815.JPG">
+				
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,1)">&#10095;</button>
+				
+				Astrophotography in Calabogie, Ontario, Canada
+			</div>
+
+			<div class="w3-content w3-display-container"> 
+				<img class="slides3" src="DSC_3352.JPG">
+				<img class="slides3" src="IMG_0052.JPG">
+				
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,2)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,2)">&#10095;</button>
+				
+				Wild life photography, Canada
+			</div>
+
+
+
+			<div>
+				<img class="slides4" src="al2.JPG">
+				<img class="slides4" src="al3.JPG">
+				<img class="slides4" src="al4.JPG">
+				<img class="slides4" src="al5.JPG">
+				<img class="slides4" src="al1.jpg">
+
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1,3)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1,3)">&#10095;</button>
+
+				Alberta: Banff National Park, Athabasca Glacier, Yoho National Park
+			</div>
+
+		</div>
+
+		<br><h2 id="paint">Painting</h2>
+			<div>
+
+			</div>
+
+		<br><h2 id="piano">Piano</h2>
+			<div>
+
+			</div>
+		<button onclick="topFunction()" id="topbtn" title="Go to top"><i class="arrow"></i></button>
+
+		<script>
+			var slideIndex = [1,1,1,1,1,1];
+			var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6"]
+			showDivs(1,0);
+			showDivs(1,1);
+			showDivs(1,2);
+			showDivs(1,3);
+			showDivs(1,4);
+			showDivs(1,5);
+
+			function plusDivs(n, no) {
+  				showDivs(slideIndex[no] += n, no);
+			}
+
+			function showDivs(n, no) {
+  				var i;
+  				var x = document.getElementsByClassName(slideId[no]);
+  				if (n > x.length) {slideIndex[no] = 1}
+  				if (n < 1) {slideIndex[no] = x.length} ;
+  				for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+  				}
+  				x[slideIndex[no]-1].style.display = "block";
+			}
+		</script>
+		<script src="backtotop.js"></script>
+
+	</body>
+
+</html>
