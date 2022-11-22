@@ -29,3 +29,12 @@ h1 {
   	background-color: whitesmoke;
   	padding: 3%;
 }
+
+#simGif {
+	width:  50%;
+	align-self: left;
+}
+
+h4 {
+	text-align: center;
+}
